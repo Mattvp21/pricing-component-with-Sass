@@ -1,0 +1,70 @@
+.our { 
+    text-align: center;
+    color: hsl(232, 13%, 33%);
+}
+
+.selector {
+    display: flex;
+    color: hsl(234, 14%, 74%);
+    justify-content: center;
+    align-content: center;
+
+    &__annually {
+        transform: translate(-45px, -10px);
+        font-size: 1rem;
+    }
+
+    &__monthly {
+        transform: translate(40px, -10px);
+        font-size: 1rem;
+    }
+}
+
+.onoffswitch {
+    
+    position: absolute; width: 58px;
+    ;
+}
+.onoffswitch-checkbox {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+     border-radius: 34px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 29px; padding: 0; line-height: 29px;
+    font-size: 0; 
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "OFF";
+    padding-left: 0px;
+    background-image:linear-gradient(hsl(236, 72%, 79%),hsl(237, 63%, 64%)) ;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 0px;
+    background-image:linear-gradient(hsl(236, 72%, 79%),hsl(237, 63%, 64%)); 
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 25px; margin: 3px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 25px;
+     border-radius: 34px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}

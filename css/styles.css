@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+.btn {
+  position: relative;
+  text-decoration: none;
+  font-size: .8rem;
+  display: inline-block;
+  border-radius: .5rem;
+  text-transform: uppercase;
+  width: 90%;
+  margin-bottom: 1.5rem;
+  color: white;
+  background-image: linear-gradient(to right, #a3a8f0, #696fdd); }
+  .btn__2 {
+    transform: scale(0.9) translateY(-0.8rem);
+    color: #696fdd;
+    background-image: none;
+    background-color: white; }
+
+.container {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  width: 60vw;
+  margin-bottom: 5rem; }
+
+.card {
+  line-height: 3rem;
+  width: 90%;
+  text-align: center; }
+  .card__heading {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    color: #6d708d; }
+  .card__price {
+    font-size: 4rem;
+    margin-top: 3rem;
+    margin-left: 2rem; }
+    .card__price--dollar {
+      font-size: 2.8rem;
+      position: absolute;
+      transform: translateX(-2rem); }
+  .card__features {
+    margin-top: 2rem;
+    list-style: none;
+    font-size: .8rem;
+    line-height: 3;
+    position: relative;
+    margin-right: 2rem; }
+    .card__features li {
+      border: .5px;
+      border-top-color: #f6f6fe;
+      border-style: inset;
+      border-left: none;
+      border-right: none;
+      border-bottom: none;
+      color: #6d708d; }
+  .card__basic {
+    border-radius: 15px;
+    background-color: white;
+    transform: translate(-15px); }
+  .card__professional {
+    border-radius: 15px;
+    background-color: white;
+    transform: scale(1.1);
+    background-image: linear-gradient(#a3a8f0, #696fdd); }
+  .card__master {
+    border-radius: 15px;
+    background-color: white;
+    transform: translate(15px); }
+  .card__heading-2 {
+    transform: translateY(1rem);
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    color: white; }
+  .card__price-2 {
+    transform: translateY(0.5rem);
+    color: white;
+    font-size: 4rem;
+    margin-top: 3rem;
+    margin-left: 2rem; }
+    .card__price-2--dollar {
+      font-size: 2.8rem;
+      position: absolute;
+      transform: translateX(-2rem); }
+  .card__features-2 {
+    color: white;
+    margin-top: 2rem;
+    list-style: none;
+    font-size: .8rem;
+    line-height: 3;
+    position: relative;
+    margin-right: 2rem; }
+    .card__features-2 li {
+      border: .5px;
+      border-top-color: #f6f6fe;
+      border-style: inset;
+      border-left: none;
+      border-right: none;
+      border-bottom: none;
+      color: white; }
+
+.our {
+  text-align: center;
+  color: #494c5f; }
+
+.selector {
+  display: flex;
+  color: #b3b5c6;
+  justify-content: center;
+  align-content: center; }
+  .selector__annually {
+    transform: translate(-45px, -10px);
+    font-size: 1rem; }
+  .selector__monthly {
+    transform: translate(40px, -10px);
+    font-size: 1rem; }
+
+.onoffswitch {
+  position: absolute;
+  width: 58px; }
+
+.onoffswitch-checkbox {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none; }
+
+.onoffswitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 34px; }
+
+.onoffswitch-inner {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  transition: margin 0.3s ease-in 0s; }
+
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 29px;
+  padding: 0;
+  line-height: 29px;
+  font-size: 0;
+  box-sizing: border-box; }
+
+.onoffswitch-inner:before {
+  content: "OFF";
+  padding-left: 0px;
+  background-image: linear-gradient(#a3a8f0, #696fdd); }
+
+.onoffswitch-inner:after {
+  content: "OFF";
+  padding-right: 0px;
+  background-image: linear-gradient(#a3a8f0, #696fdd);
+  text-align: right; }
+
+.onoffswitch-switch {
+  display: block;
+  width: 25px;
+  margin: 3px;
+  background: #FFFFFF;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 25px;
+  border-radius: 34px;
+  transition: all 0.3s ease-in 0s; }
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0; }
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+  right: 0px; }
+
+@media (max-width: 750px) {
+  .container {
+    display: block; }
+  .card__basic {
+    transform: scale(1); }
+  .card__professional {
+    transform: translateY(0.9rem); }
+  .card__master {
+    transform: scale(1) translateY(1.7rem); } }
+
+body {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  background-color: #f6f6fe;
+  background-image: url(../images/bg-bottom.svg), url(../images/bg-top.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: -5% 120%, right top; }

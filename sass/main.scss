@@ -1,0 +1,24 @@
+
+@import "sass/_button";
+@import "sass/_card";
+@import "sass/_fonts";
+@import "sass/_slider";
+@import "sass/_variables";
+@import "sass/_media";
+
+
+
+
+body {
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      background-color: hsl(240, 78%, 98%);
+      background-image: url(../images/bg-bottom.svg), url(../images/bg-top.svg);
+      background-repeat: no-repeat, no-repeat;
+      background-position: -5% 120%, right top;
+};
+
+
+
+

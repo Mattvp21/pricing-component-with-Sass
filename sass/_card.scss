@@ -1,0 +1,125 @@
+.container {
+    
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    width: 60vw;
+    margin-bottom: 5rem;
+}
+
+.card {
+    line-height: 3rem;
+    width: 90%;
+    text-align: center;
+    
+
+    &__heading {
+        font-size: 1rem;
+        margin-top: 1.5rem;
+        color: hsl(233, 13%, 49%);
+        
+    }
+
+    
+
+    &__price {
+        font-size: 4rem;
+        margin-top: 3rem;
+        margin-left: 2rem;
+        &--dollar {
+            font-size: 2.8rem;
+            position: absolute;
+            transform: translateX(-2rem);
+        }
+    }
+
+    &__features {
+        margin-top: 2rem;
+        list-style: none;
+        font-size: .8rem;
+        line-height: 3;
+        position: relative;
+        margin-right: 2rem;
+
+        & li {
+            border: .5px;
+            border-top-color: hsl(240, 78%, 98%);
+            border-style: inset;
+            border-left: none;
+            border-right: none;
+            border-bottom: none;
+            color: hsl(233, 13%, 49%);;
+           
+           
+        }
+        
+       
+    }
+   
+
+    
+    &__basic {
+        border-radius: 15px;
+        background-color: white;
+       transform: translate(-15px);
+      }
+
+    &__professional {
+        border-radius: 15px;
+        background-color: white;
+        transform: scale(1.1);
+        background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+        
+       
+       
+    }
+
+    &__master {
+        border-radius: 15px;
+        background-color: white;
+        transform: translate(15px);
+    }
+
+    &__heading-2 {
+        transform: translateY(1rem);
+        font-size: 1rem;
+        margin-top: 1.5rem;
+        color: white;
+    }
+
+    &__price-2 {
+        transform: translateY(.5rem);
+        color: white;
+        font-size: 4rem;
+        margin-top: 3rem;
+        margin-left: 2rem;
+        &--dollar {
+            font-size: 2.8rem;
+            position: absolute;
+            transform: translateX(-2rem);
+        }
+    }
+
+    &__features-2 {
+        color: white;
+        margin-top: 2rem;
+        list-style: none;
+        font-size: .8rem;
+        line-height: 3;
+        position: relative;
+        margin-right: 2rem;
+        
+        & li {
+            border: .5px;
+            border-top-color: hsl(240, 78%, 98%);
+            border-style: inset;
+            border-left: none;
+            border-right: none;
+            border-bottom: none;
+            color: white;
+           
+           
+        }
+    }
+   
+}

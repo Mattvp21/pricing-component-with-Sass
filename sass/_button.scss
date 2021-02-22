@@ -1,0 +1,20 @@
+.btn {
+    position: relative;
+      
+    text-decoration: none;
+    font-size: .8rem;
+    display: inline-block;
+    border-radius: .5rem;
+    text-transform: uppercase;
+    width: 90%;
+    margin-bottom: 1.5rem;
+    color: white;
+    background-image: linear-gradient(to right,hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+
+    &__2 {
+        transform: scale(.9) translateY(-.8rem);
+        color: hsl(237, 63%, 64%);
+        background-image: none;
+        background-color: white;
+    }
+}

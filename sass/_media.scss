@@ -1,0 +1,18 @@
+@media (max-width: 750px) {
+    
+    .container {
+        display: block;
+       } 
+
+    .card__basic {
+        transform: scale(1.0);
+    }
+
+    .card__professional {
+        transform: translateY(.9rem);
+    }
+
+    .card__master {
+        transform: scale(1.0) translateY(1.7rem);
+    }
+}      
